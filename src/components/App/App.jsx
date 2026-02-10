@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation/Navigation';
-import Welcome from './components/Welcome/Welcome';
-import WhaleSightings from './components/WhaleSightings/WhaleSightings';
-import CourtReservations from './components/CourtReservations/CourtReservations';
-import Footer from './components/Footer/Footer';
-import { AuthProvider } from './contexts/AuthContext';
-import { fetchTideData } from './utils/api';
+import Navigation from '../Navigation/Navigation';
+import Welcome from '../Welcome/Welcome';
+import WhaleSightings from '../WhaleSightings/WhaleSightings';
+import CourtReservations from '../CourtReservations/CourtReservations';
+import Footer from '../Footer/Footer';
+import { AuthProvider } from '../../contexts/AuthContext';
+import { fetchTideData } from '../../utils/api';
 import './App.css';
 
 const SEATTLE_STATION_ID = '9447130';
