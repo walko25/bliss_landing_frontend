@@ -30,7 +30,7 @@ function App() {
 
   return (
     <AuthProvider>
-      <Router>
+      <Router basename="/bliss_landing_frontend">
         <div className="app">
           <Navigation />
           <main className="app__main">
