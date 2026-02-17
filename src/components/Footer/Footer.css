@@ -1,0 +1,13 @@
+.footer {
+  background: #FCFAF5;
+  padding: 24px;
+  text-align: center;
+  border-top: 1px solid rgba(35, 80, 85, 0.2);
+}
+
+.footer__text {
+  margin: 0;
+  color: rgba(35, 80, 85, 1);
+  font-size: 14px;
+  font-family: 'Cinzel', serif;
+}

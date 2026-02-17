@@ -1,0 +1,228 @@
+.sightings {
+  min-height: 100vh;
+  background-image: url('../../assets/water-ripple.jpeg');
+  background-size: cover;
+  background-position: top;
+  background-attachment: scroll;
+  padding: 32px 16px;
+}
+
+.sightings__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sightings__header {
+  background: transparent;
+  color: white;
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.sightings__title {
+  margin: 0 0 8px 0;
+  font-size: 56px;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: 'Cinzel', serif;
+}
+
+.sightings__subtitle {
+  margin: 0;
+  font-size: 29px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  font-family: 'Cinzel', serif;
+}
+
+.sightings__content {
+  margin-top: 32px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sightings__report-button {
+  width: 100%;
+  padding: 19px;
+  background: rgba(35, 80, 85, 1);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 21px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 32px;
+  font-family: 'Cinzel', serif;
+}
+
+.sightings__report-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sightings__report-button:active {
+  transform: translateY(0);
+}
+
+.sightings__list-section {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sightings__section-title {
+  color: rgba(35, 80, 85, 1);
+  font-size: 36px;
+  margin: 0 0 24px 0;
+  border-bottom: 2px solid rgba(35, 80, 85, 0.3);
+  padding-bottom: 8px;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+}
+
+.sightings-form__group {
+  margin-bottom: 24px;
+}
+
+.sightings-form__label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.sightings-form__input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(35, 80, 85, 0.3);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+.sightings-form__input:focus {
+  outline: none;
+  border-color: rgba(35, 80, 85, 1);
+}
+
+.sightings-form__input--select {
+  cursor: pointer;
+}
+
+.sightings-form__input--textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.sightings-form__submit {
+  width: 100%;
+  padding: 16px;
+  background: rgba(35, 80, 85, 1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sightings-form__submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sightings-form__submit:active {
+  transform: translateY(0);
+}
+
+.sightings__empty {
+  text-align: center;
+  color: #666;
+  padding: 32px;
+  font-style: italic;
+}
+
+.sightings__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.sighting-card {
+  border: 2px solid rgba(35, 80, 85, 0.3);
+  border-radius: 8px;
+  padding: 16px;
+  background: rgba(249, 253, 249, 0.7);
+}
+
+.sighting-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(35, 80, 85, 0.3);
+}
+
+.sighting-card__species {
+  margin: 0;
+  color: rgba(35, 80, 85, 1);
+  font-size: 19px;
+}
+
+.sighting-card__count {
+  background: rgba(35, 80, 85, 1);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sighting-card__details {
+  color: #333;
+}
+
+.sighting-card__detail {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.sighting-card__notes {
+  margin-top: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  font-size: 14px;
+  color: #555;
+  border-left: 3px solid rgba(35, 80, 85, 1);
+}
+
+@media (max-width: 768px) {
+  .sightings__title {
+    font-size: 40px;
+  }
+
+  .sightings__subtitle {
+    font-size: 22px;
+  }
+
+  .sightings__header {
+    padding: 32px 24px;
+  }
+
+  .sightings__list-section {
+    padding: 24px;
+  }
+
+  .sightings__report-button {
+    font-size: 18px;
+    padding: 16px;
+  }
+}
