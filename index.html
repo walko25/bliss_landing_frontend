@@ -1,126 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bliss Landing — Back Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #0d1c1e 0%, #1a3a3f 50%, #0d1c1e 100%);
-      font-family: 'Cinzel', Georgia, serif;
-      color: white;
-      padding: 24px;
-      overflow: hidden;
-    }
-
-    .container {
-      text-align: center;
-      max-width: 540px;
-      animation: fadeIn 1.2s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .wave {
-      font-size: 64px;
-      display: block;
-      margin-bottom: 24px;
-      animation: bob 3.5s ease-in-out infinite;
-    }
-
-    @keyframes bob {
-      0%, 100% { transform: translateY(0); }
-      50%       { transform: translateY(-12px); }
-    }
-
-    h1 {
-      font-size: 42px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      margin-bottom: 8px;
-      color: #fff;
-    }
-
-    .indigenous {
-      font-size: 18px;
-      color: rgba(90, 175, 185, 0.85);
-      margin-bottom: 32px;
-      letter-spacing: 1px;
-    }
-
-    .divider {
-      width: 60px;
-      height: 2px;
-      background: rgba(90, 175, 185, 0.6);
-      margin: 0 auto 32px;
-      border-radius: 2px;
-    }
-
-    .message {
-      font-size: 19px;
-      font-weight: 600;
-      color: rgba(90, 175, 185, 1);
-      margin-bottom: 16px;
-    }
-
-    .sub {
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.55);
-      line-height: 1.8;
-      font-family: Georgia, serif;
-      font-style: italic;
-    }
-
-    .dots {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: rgba(90, 175, 185, 0.5);
-      animation: pulse 1.5s ease-in-out infinite;
-    }
-
-    .dot:nth-child(2) { animation-delay: 0.3s; }
-    .dot:nth-child(3) { animation-delay: 0.6s; }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 0.3; transform: scale(1); }
-      50%       { opacity: 1;   transform: scale(1.3); }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <span class="wave">🌊</span>
-    <h1>Bliss Landing</h1>
-    <p class="indigenous">ǰɛǰɛšiʔəm</p>
-    <div class="divider"></div>
-    <p class="message">We'll be back soon</p>
-    <p class="sub">
-      The site is temporarily offline.<br />
-      We'll be back in a week or two — thank you for your patience.
-    </p>
-    <div class="dots">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Discovery Springs</title>
+    <script>
+      (function() {
+        var p = new URLSearchParams(window.location.search).get('p');
+        if (p) {
+          window.history.replaceState(null, null, decodeURIComponent(p));
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BQ4rhVeM.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C7tNMwXz.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
